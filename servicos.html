@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/barba.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="logo" src="imagens/logo-barbearia.png">
+            </div>
+    
+            <ul class="minhas-listas">
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="contato.html" class="button">Contato</a></li>
+                <li><a href="sobre.html"class="button">Sobre</a></li>
+                <li><a href="crud.html">CRUD</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <script>
+            function confirmarCompra() {
+        return confirm("Tem certeza de que gostaria de comprar este produto?");
+    }
+</script>
+        
+
+        <h1 class="servicos">Serviço cortes de cabelos e barbas</h1>
+        
+        <ul class=produtos>
+            <li onclick="if(confirmarCompra()) alert('Compra realizada com sucesso!  -25R$');">
+                <h2>Cabelo</h2>
+                <img src="imagens/cabelo.jpg" class="imagem-produtos">
+                <p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+                <p class="produto-preco">R$25,00</p>
+            </li>
+            <li onclick="if(confirmarCompra()) alert('Compra realizada com sucesso!  -18R$');">
+                <h2>Barba</h2>
+                <img src="imagens/barbaa.jpg" class="imagem-produtos">
+                <p class="produto-descricao">Corte profissional de barba</p>
+                <p class="produto-preco">R$18,00</p>
+            </li>
+            <li onclick="if(confirmarCompra()) alert('Compra realizada com sucesso!  -35R$');">
+                <h2>Cabelo + Barba</h2>
+                <img src="imagens/cabelo+barba.jpg" class="imagem-produtos">
+                <p class="produto-descricao">Corte completo de cabelo e barba</p>
+                <p class="produto-preco">R$35,00</p>
+            </li>
+        </ul>
+
+        
+
+
+        <h1 class="servicos">Serviço de coloração de cabelo</h1>
+
+        <ul class=produtos>
+            <li class="finish">
+                <h2>Coloração</h2>
+                <img  src="imagens/cabelo-colorido.jpeg" class="colorido">
+                <p class="produto-descricao">Uma variedade de cores para o seu estilo de cabelo</p>
+                <p class="produto-preco">R$50,00</p>
+            </li>
+            <li class="barba">
+                <h2>Mechas</h2>
+                <img src="imagens/mechas.jpg" class="mechas">
+                <p class="produto-descricao">Mechas com profissionais qualificados</p>
+                <p class="produto-preco">R$20,00</p>
+          
+            </li>
+            <li>
+                <h2>Alisamento</h2>
+                <img src="imagens/maxy-blend-super-alisamento-resultado-dot_1_.jpg" class="alisamento">
+                <p class="produto-descricao">Alisamento com diversos produtos e técnicas</p>
+                <p class="produto-preco">R$32,00</p>
+            </li>
+        </ul>
+
+    
+
+    </main>
+    <footer>
+        <p class="logo-footer">RR</p>
+        <p class="footer-p">&copy;Feito por Romário Ribeiro</p>
+        <div class="icones">
+            <a href="https://www.instagram.com/romario.ribeiro.583/" target="_blank"class="footerlink"id="instagram">
+                <i class="fa-brands fa-instagram" style="color: #76107e;"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/romario-ribeiro-66733b256/" target="_blank"class="footerlink"id="linkedin">
+                <i class="fa-brands fa-linkedin" style="color: #5882ca;"></i>
+            </a>
+            <a class="github" href="https://github.com/settings/profile" target="_blank"class="footerlink"id="github">
+
+                <i class="fa-brands fa-github-alt" style="color: #edf2fd;"></i>
+            </a>
+        </div>
+    </footer>
+    
+   
+    
+    
+</body>
+</html>
+

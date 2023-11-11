@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Serviços</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <main class="formm">
+        <h1>Login</h1>
+        <p>usuario:user</p>
+        <p>senha:1234</p>
+       
+        
+        <form action="servicos.html" method="post" onsubmit="return validarFormulario()">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required><br>
+    
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required><br>
+    
+            <input type="submit" onclick="logar(); return false">
+        </form>
+    </main>
+    
+    <script>
+        function logar() {
+            var login = document.getElementById('username').value;
+            var senha = document.getElementById('password').value;
+        
+            if (login == "user" && senha == "1234") {
+                alert('Sucesso');
+                location.href = "servicos.html";
+            } else {
+                alert('Usuario ou senha incorretos');
+            }
+        }
+        </script>
+
+   
+    
+
+
+
+</html>
